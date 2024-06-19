@@ -1,0 +1,28 @@
+{
+  "name": "cypress-automation-framework",
+  "version": "1.0.0",
+  "description": "Cypress Cucumber Automation Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ruipereirapf/cypress-automation-framework.git"
+  },
+  "author": "Rui Pereira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ruipereirapf/cypress-automation-framework/issues"
+  },
+  "homepage": "https://github.com/ruipereirapf/cypress-automation-framework#readme",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.7",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.1",
+    "cypress": "^12.14.0",
+    "ts-loader": "^9.5.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/support/step_definitions/**/*.js"
+  }
+}
