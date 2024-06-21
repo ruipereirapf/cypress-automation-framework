@@ -58,5 +58,5 @@ When ('I type a email adress {string} and a comment {string}', (email, comment) 
 
 Then ('I should be presented with headet text {string}', (message) => {
     // cy.get('body').contains(message);
-    cy.xpath('//h1 | //body').contains(message);
+    cy.xpath('//h1 | //body').contains(message)
 })
