@@ -1,3 +1,4 @@
+@login @regression
 Feature: WebdriverUniversity - Login Portal Page
 
     Background: Pre Conditions
@@ -14,3 +15,4 @@ Feature: WebdriverUniversity - Login Portal Page
             | username  | password     | message              |
             | webdriver | webdriver123 | validation succeeded |
             | webdriver | 123          | validation failed    |
+            | 123       | password     | validation failed    |
