@@ -45,3 +45,18 @@ When ('I enter a specific email {string}', (email) => {
 When ('I type a specific word {string} and a number {int} within the comment field', (word, number) => {
     cy.get('textarea[name="message"]').type(word + " " + number);
 })
+
+When ('I type a first name {word} and a last name {string}', (firstName, lastName) => {
+    cy.get('[name="first_name"]').type(firstName);
+    cy.get('[name="last_name"]').type(lastName);
+})
+
+When ('I type a email adress {string} and a comment {string}', (email, comment) => {
+    cy.get('[name="email"]').type(email);
+    cy.get('textarea[name="message"]').type(comment);
+})
+
+Then ('I should be presented with headet text {string}', (message) => {
+    // cy.get('body').contains(message);
+    cy.xpath('//h1 | //body').contains(message)
+})
