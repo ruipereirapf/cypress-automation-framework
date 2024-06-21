@@ -31,7 +31,7 @@ Feature: WebdriverUniversity - Contact Us Page
         And I type a first name <firstName> and a last name '<lastName>'
         And I type a email adress '<email>' and a comment '<comment>'
         And I click on the submit button
-        Then I should be presented with headet text '<message>'
+        Then I should be presented with header text '<message>'
 
         Examples:
             | firstName | lastName | email                | comment                 | message                      |

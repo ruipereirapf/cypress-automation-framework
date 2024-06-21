@@ -1,3 +1,4 @@
+/// <reference types="cypress" />
 import { When, Then } from "@badeball/cypress-cucumber-preprocessor";
 
 When ('I type a first name', () => {
@@ -56,7 +57,7 @@ When ('I type a email adress {string} and a comment {string}', (email, comment) 
     cy.get('textarea[name="message"]').type(comment);
 })
 
-Then ('I should be presented with headet text {string}', (message) => {
+Then ('I should be presented with header text {string}', (message) => {
     // cy.get('body').contains(message);
     cy.xpath('//h1 | //body').contains(message)
 })
