@@ -6,25 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "full-regression-headed-chrome": "cypress run --headed --browser chrome --spec 'cypress/e2e/*.feature'",
-    "full-regression-headless-chrome": "cypress run --browser chrome --spec 'cypress/e2e/*.feature",
-    "contact-us-tests-headed-chrome": "cypress run --headed --browser chrome --spec 'cypress/e2e/Contact_Us.feature",
-    "contact-us-tests-headed": "cypress run -e TAGS=\"@contact-us\" --headed",
-    "contact-us-tests-headless": "cypress run -e TAGS=\"@contact-us\"",
-    "login-tests-headed": "cypress run -e TAGS=\"@login\" --headed",
-    "login-and-smoke-pack": "cypress run -e TAGS=\"@login or @smoke\" --headed",
-    "smoke-pack-headed": "cypress run -e TAGS=\"@smoke\" --headed",
-    "regression-pack-headed": "cypress run -e TAGS=\"@regression and not @smoke\" --headed"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ruipereirapf/cypress-automation-framework.git"
+    "full-regression-headless-chrome": "cypress run --browser chrome --spec 'cypress/e2e/*.feature'",
+    "contact-us-tests-headed-chrome": "cypress run --headed --browser chrome --spec 'cypress/e2e/Contact_Us.feature'",
+    "contact-us-tests-headed": "cypress run -e TAGS='@contact-us' --headed",
+    "contact-us-tests-headless": "cypress run -e TAGS='@contact-us'",
+    "login-tests-headed": "cypress run -e TAGS='@login' --headed",
+    "login-and-smoke-pack": "cypress run -e TAGS='@login or @smoke' --headed",
+    "smoke-pack-headed": "cypress run -e TAGS='@smoke' --headed",
+    "regression-pack-headed": "cypress run -e TAGS='@regression and not @smoke' --headed"
   },
   "author": "Rui Pereira",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ruipereirapf/cypress-automation-framework/issues"
-  },
-  "homepage": "https://github.com/ruipereirapf/cypress-automation-framework#readme",
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^20.0.7",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.1",
