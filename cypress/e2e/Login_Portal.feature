@@ -1,11 +1,11 @@
 @login @regression
 Feature: WebdriverUniversity - Login Portal Page
 
-    Background: Pre Conditions
-        Given I navigate to the WebdriverUniversity homepage
-        When I click on the login portal button
-
     Scenario Outline: Validate Valid and Invalid Login credentials
+        # Given I navigate to the WebdriverUniversity homepage
+        # When I click on the login portal button
+        Given I navigate to the WebdriverUniversity login page
+        When I wait for 0 seconds
         And I type a username <username>
         And I type a password <password>
         And I click on the login button
